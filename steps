@@ -19,6 +19,7 @@ saving data without hibernate:
 3 add jar file for your jdbc database
 4 in src folder create file hibernate.cfg.xml and copy text from the same file from hibernate jar 
 but correct database url pass etc specific dialect take class from jar  org.hibernate.dialect
+hbm2dll.auto = update... not create from scratch everytime :)
 5 create model class UserDetails, int id, string name getters setters...
 6 insert name of this class in hibernate.cfg.xml  > mapping class
 7 insert annotation @Entity to class UserDetails and @Id at primary key variable
