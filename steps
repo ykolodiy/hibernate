@@ -14,4 +14,6 @@ saving data without hibernate:
 1 create java project
 2 add dependency in new library hibernate.org/downloads
 3 add jar file for your jdbc database
-4 in src folder create file hibernate.cfg.xml and copy text from the same file from hibernate jar but correct database url pass etc
+4 in src folder create file hibernate.cfg.xml and copy text from the same file from hibernate jar 
+but correct database url pass etc specific dialect take class from jar  org.hibernate.dialect
+5 create model class UserDetails
