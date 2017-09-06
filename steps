@@ -1,0 +1,17 @@
+saving data without hibernate:
+- jdbc database configuration
+- model object
+- service method to create model object
+- database design
+-dao method to save object using sql queries
+saving data without hibernate:
+- jdbc database configuration: hibernate conf
+- model object:annotation
+- service method to create model object: hibernate api
+
+
+
+1 create java project
+2 add dependency in new library hibernate.org/downloads
+3 add jar file for your jdbc database
+4 in src folder create file hibernate.cfg.xml and copy text from the same file from hibernate jar but correct database url pass etc
