@@ -1,12 +1,15 @@
+https://www.youtube.com/watch?v=FFMOZY4z6bE&list=PL4AFF701184976B25&index=5
+
 saving data without hibernate:
 - jdbc database configuration
 - model object
 - service method to create model object
 - database design
 -dao method to save object using sql queries
+
 saving data without hibernate:
-- jdbc database configuration: hibernate conf
-- model object:annotation
+- jdbc database configuration: hibernate conf  (steps 1-3)
+- model object:annotation (4-8)
 - service method to create model object: hibernate api
 
 
@@ -18,3 +21,11 @@ saving data without hibernate:
 but correct database url pass etc specific dialect take class from jar  org.hibernate.dialect
 5 create model class UserDetails, int id, string name getters setters...
 6 insert name of this class in hibernate.cfg.xml  > mapping class
+7 insert annotation @Entity to class UserDetails and @Id at primary key variable
+8 create class that UserDetails u = new UserDetails(); instanciate (setters) and save to db that object
+9 using hibernate api to save:
+-create session factory : SessionFactory s = new Configuration().configure().buildSessionFactory();
+-create session from session factory: Session sess = s.openSession(); sess.beginTransaction();
+-use this session to save model object: sess.save(use); sess.getTransaction().commit();
+
+that all u dont need to write any quiery :)
