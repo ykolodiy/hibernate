@@ -17,3 +17,4 @@ saving data without hibernate:
 4 in src folder create file hibernate.cfg.xml and copy text from the same file from hibernate jar 
 but correct database url pass etc specific dialect take class from jar  org.hibernate.dialect
 5 create model class UserDetails, int id, string name getters setters...
+6 insert name of this class in hibernate.cfg.xml  > mapping class
